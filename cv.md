@@ -130,6 +130,25 @@ video {
 }
 ```
 
+```
+<md-field
+    v-if="tab === 'registration'"
+    class="material-input-auth-wrapper validate-block"
+    >
+    <label>Имя</label>
+    <md-input
+        v-validate="'required|alpha_dash|min:3|max:20'"
+        v-model="firstName"
+        name="name"
+    />
+    <p
+        v-show="errors.has('name')"
+        class="is-danger">
+        <span>{{ errors.first('name') }}</span>
+    </p>
+</md-field>
+```
+
 # Experience 
 1) **Eccentex Simferopol**   
 August 2018 - Present  
