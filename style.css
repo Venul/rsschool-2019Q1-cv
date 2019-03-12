@@ -27,7 +27,8 @@ section:after {
     margin: 0;
 }
 
-.experience li:last-child:after {
+.experience li:last-child:after,
+section:last-child:after  {
     display: none;
 }
 

@@ -55,128 +55,128 @@
             <h2>Code</h2>
             <h3>JS</h3>
             <pre>
-            init: function () {
-                var me = this,
-                    vm = me.getViewModel();
-                EcxUtils5.Request.executeRule(
-                    'root_MOJ_isUserHasRoles',
-                    {
-                        ROLE_CODES: 'REQUESTOR'
-                    },
-                    function (response, failFn, srd) {
-                        var items = srd && srd.parsedData && srd.parsedData.ROLESCOUNT;
-                        vm.set('AllowCreateCase', items > 0);
-                    });
+    init: function () {
+        var me = this,
+            vm = me.getViewModel();
+        EcxUtils5.Request.executeRule(
+            'root_MOJ_isUserHasRoles',
+            {
+                ROLE_CODES: 'REQUESTOR'
             },
+            function (response, failFn, srd) {
+                var items = srd && srd.parsedData && srd.parsedData.ROLESCOUNT;
+                vm.set('AllowCreateCase', items > 0);
+            });
+    },
             </pre>
             <h3>HTML</h3>
             <pre>
-            <section class="health-section" id="blockchain">
-                    <div class="container">
-                        <h2>Blockchain</h2>
-                        <div class="health-hex">
-                            <img src="img/health-hex.png?ver=2" alt="health">
-                            <p class="health">Health</p>
-                            <p class="speed">Speed</p>
-                            <p class="easy">Ease</p>
-                            <p class="safe">Safety</p>
-                            <p class="care">Care</p>
-                            <p class="chain">Blockchain</p>
-                        </div>
-                        <div class="health-txt">
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <h1>Health</h1>
-                                        <p class="light-p">The WELL platform is improving its patients’ key health indicators and has already lowered hospital readmission rates by 49.5%, compared with the national average.</p>
-                                    </div>
-                                    <div class="item">
-                                        <h1>Care</h1>
-                                        <p class="light-p">Dissolving country borders and opening up worldwide access to the highest quality healthcare, with services available 24/7/365.</p>
-                                    </div>
-                                    <div class="item">
-                                        <h1>Safety</h1>
-                                        <p class="light-p">Dynamic, HIPPA compliant de-identification protocol will partition data based on levels of informational access to different parties, times, reasons, locations, all on a need-to-know basis only.</p>
-                                    </div>
-                                    <div class="item">
-                                        <h1>Blockchain</h1>
-                                        <p class="light-p">Blockchain and smart contracts eliminate overhead costs and payment complexity.</p>
-                                    </div>
-                                    <div class="item">
-                                        <h1>Ease</h1>
-                                        <p class="light-p">User-friendly interface provides patient access across multiple channels and devices, including mobile, desktop, tablet and video.</p>
-                                    </div>
-                                    <div class="item">
-                                        <h1>Speed</h1>
-                                        <p class="light-p">Faster pre-authorization, instant payment to the provider, and timely treatment of the patient</p>
-                                    </div>
-                                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    &lt;section class="health-section" id="blockchain"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Blockchain&lt;/h2&gt;
+            &lt;div class="health-hex"&gt;
+                &lt;img src="img/health-hex.png?ver=2" alt="health"&gt;
+                &lt;p class="health"&gt;Health&lt;/p&gt;
+                &lt;p class="speed"&gt;Speed&lt;/p&gt;
+                &lt;p class="easy"&gt;Ease&lt;/p&gt;
+                &lt;p class="safe"&gt;Safety&lt;/p&gt;
+                &lt;p class="care"&gt;Care&lt;/p&gt;
+                &lt;p class="chain"&gt;Blockchain&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="health-txt"&gt;
+                &lt;div id="carousel-example-generic" class="carousel slide" data-ride="carousel"&gt;
+                    &lt;ol class="carousel-indicators"&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="1"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="2"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="3"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="4"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="5"&gt;&lt;/li&gt;
+                    &lt;/ol&gt;
+                    &lt;div class="carousel-inner"&gt;
+                        &lt;div class="item active"&gt;
+                            &lt;h1&gt;Health&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;The WELL platform is improving its patients’ key health indicators and has already lowered hospital readmission rates by 49.5%, compared with the national average.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Care&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Dissolving country borders and opening up worldwide access to the highest quality healthcare, with services available 24/7/365.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Safety&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Dynamic, HIPPA compliant de-identification protocol will partition data based on levels of informational access to different parties, times, reasons, locations, all on a need-to-know basis only.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Blockchain&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Blockchain and smart contracts eliminate overhead costs and payment complexity.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Ease&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;User-friendly interface provides patient access across multiple channels and devices, including mobile, desktop, tablet and video.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Speed&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Faster pre-authorization, instant payment to the provider, and timely treatment of the patient&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"&gt;
+                            &lt;span class="glyphicon glyphicon-chevron-left"&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;a class="right carousel-control" href="#carousel-example-generic" data-slide="next"&gt;
+                            &lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
             </pre>
             <h3>CSS</h3>
             <pre>
-            @font-face {
-                font-family: 'HelveticaThin';
-                src: url(../fonts/HelveticaNeueCyr-Thin.otf);
-            }
-            
-            body {
-                font-family: 'GothamRoundedLight', Helvetica, sans-serif;
-            }
-            
-            video {
-                width: 100%;
-                height: auto;
-                position: absolute;
-                opacity: 0.7;
-            }
-            
-            .nav>li>a {
-                padding: 10px 5px;
-                text-transform: uppercase;
-                font-family: 'LatoReg', Helvetica, sans-serif;
-                font-size: 14px;
-                line-height: 1.71;
-                letter-spacing: 2.8px;
-                text-align: left;
-                color: #fff;
-            }
+    @font-face {
+        font-family: 'HelveticaThin';
+        src: url(../fonts/HelveticaNeueCyr-Thin.otf);
+    }
+    
+    body {
+        font-family: 'GothamRoundedLight', Helvetica, sans-serif;
+    }
+    
+    video {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        opacity: 0.7;
+    }
+    
+    .nav>li>a {
+        padding: 10px 5px;
+        text-transform: uppercase;
+        font-family: 'LatoReg', Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 2.8px;
+        text-align: left;
+        color: #fff;
+    }
             </pre>
             <h3>VueJS</h3>
             <pre>
-            <md-field
-                v-if="tab === 'registration'"
-                class="material-input-auth-wrapper validate-block"
-                >
-                <label>Имя</label>
-                <md-input
-                    v-validate="'required|alpha_dash|min:3|max:20'"
-                    v-model="firstName"
-                    name="name"
-                />
-                <p
-                    v-show="errors.has('name')"
-                    class="is-danger">
-                    <span></span>
-                </p>
-            </md-field>
+    &lt;md-field
+    v-if="tab === 'registration'"
+    class="material-input-auth-wrapper validate-block"
+    &gt;
+        &lt;label&gt;Имя&lt;/label&gt;
+        &lt;md-input
+            v-validate="'required|alpha_dash|min:3|max:20'"
+            v-model="firstName"
+            name="name"
+        /&gt;
+        &lt;p
+            v-show="errors.has('name')"
+            class="is-danger"&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/md-field&gt;
             </pre>
         </section>
         <section class="experience">
@@ -220,7 +220,7 @@
                 </li>
                 <li>
                     <h3>Origami</h3> 
-                    <p>>August 2016 - April 2017</p>
+                    <p>August 2016 - April 2017</p>
                     <p><strong>Frontend Developer</strong></p>
                     <p>Projects: http: //anyks-mozaikaika.rf, http://kakbyhotel.ru, http: //avubus-vezet.rf </p>
                     <p>Responsibilities: adaptive layout of pages, mobile adaptation of ready-made sites. Tools and technologies: HTML5, CSS3, Bootstrap, jQuery</p>
