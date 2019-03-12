@@ -1,0 +1,50 @@
+body {
+    width: 1024px;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.experience li {
+    margin-bottom: 15px;
+}
+
+.experience li:after,
+section:after {
+    content: "";
+    width: 100%;
+    background: #b4b5bb5e;
+    height: 1px;
+    display: block;
+    margin-left: -20px;
+}
+
+section:after {
+    background: #3f51b56b;
+    margin: 0;
+}
+
+.experience li:last-child:after {
+    display: none;
+}
+
+pre {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.language {
+    padding-bottom: 15px;
+}
+
+img {
+    float: right;
+    width: 200px;
+}
+
+.about div {
+    display: inline-block;
+}
