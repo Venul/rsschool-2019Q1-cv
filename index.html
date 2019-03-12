@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>CV</title>
+    </head>
+    <body>
+        <section class="about">
+            <h1>Sergey Lunev</h1>
+            <div>
+                <p>Date of birth: <strong>November 23d, 1988 </strong></p>
+                <p>Phone number: <strong>+7-978-831-56-94 </strong></p>
+                <p>E-mail: <strong>s.lunev88@gmail.com </strong></p>
+                <p>Skype: <strong>venul23</strong></p>
+            </div>
+            <img src="assets/img/photo.jpg" alt="photo">
+        </section>
+        <section>
+            <h2>Summary</h2>
+            <p>
+                The last 4 years my main activity is frontend development. To create responsive cross-browser pages, 
+                I mainly use HTML5 and CSS3 (Bootstrap, Semantic Ui, Sass), as well as JavaScript. Have experience 
+                developing on such JS frameworks as Vue and ExtJS. In the direction of the frontend, familiar with 
+                the template engine Twig, MJML to create email, WordPress. In addition to the frontend, there is 
+                experience with backend, like the symfony framework (PHP) and databases (Oracle, MS SQL). I was writing 
+                e2e tests for NightmareJS (Mocha, Chai) and Unit tests (PHPUnit). In large projects I use Git, 
+                the development environment is Ubuntu.
+            </p>
+            <p>
+                Seeking employment with a company where I could apply and improve my programming skills and take 
+                all the advantages of my knowledge
+            </p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 (Bootstrap 3, Semantic-ui, SASS)</li>
+                <li>JavaScript (JQuery, Vue, ExtJS)</li>
+                <li>MySQL, Oracle, MS SQL</li>
+                <li>Twig, MJML</li>
+                <li> NightmareJS (Mocha, Chai)</li>
+            </ul>
+            <h3>Experience with</h3>
+            <ul>
+                <li>Redmine, Jira, Youtrack, SCRUM</li>
+                <li>Mysql Workbench, WebStorm, Composer, Git, Svn</li>
+                <li>Work on Ubuntu</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Code</h2>
+            <h3>JS</h3>
+            <pre>
+    init: function () {
+        var me = this,
+            vm = me.getViewModel();
+        EcxUtils5.Request.executeRule(
+            'root_MOJ_isUserHasRoles',
+            {
+                ROLE_CODES: 'REQUESTOR'
+            },
+            function (response, failFn, srd) {
+                var items = srd && srd.parsedData && srd.parsedData.ROLESCOUNT;
+                vm.set('AllowCreateCase', items > 0);
+            });
+    },
+            </pre>
+            <h3>HTML</h3>
+            <pre>
+    &lt;section class="health-section" id="blockchain"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Blockchain&lt;/h2&gt;
+            &lt;div class="health-hex"&gt;
+                &lt;img src="img/health-hex.png?ver=2" alt="health"&gt;
+                &lt;p class="health"&gt;Health&lt;/p&gt;
+                &lt;p class="speed"&gt;Speed&lt;/p&gt;
+                &lt;p class="easy"&gt;Ease&lt;/p&gt;
+                &lt;p class="safe"&gt;Safety&lt;/p&gt;
+                &lt;p class="care"&gt;Care&lt;/p&gt;
+                &lt;p class="chain"&gt;Blockchain&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="health-txt"&gt;
+                &lt;div id="carousel-example-generic" class="carousel slide" data-ride="carousel"&gt;
+                    &lt;ol class="carousel-indicators"&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="1"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="2"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="3"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="4"&gt;&lt;/li&gt;
+                        &lt;li data-target="#carousel-example-generic" data-slide-to="5"&gt;&lt;/li&gt;
+                    &lt;/ol&gt;
+                    &lt;div class="carousel-inner"&gt;
+                        &lt;div class="item active"&gt;
+                            &lt;h1&gt;Health&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;The WELL platform is improving its patients’ key health indicators and has already lowered hospital readmission rates by 49.5%, compared with the national average.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Care&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Dissolving country borders and opening up worldwide access to the highest quality healthcare, with services available 24/7/365.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Safety&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Dynamic, HIPPA compliant de-identification protocol will partition data based on levels of informational access to different parties, times, reasons, locations, all on a need-to-know basis only.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Blockchain&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Blockchain and smart contracts eliminate overhead costs and payment complexity.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Ease&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;User-friendly interface provides patient access across multiple channels and devices, including mobile, desktop, tablet and video.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="item"&gt;
+                            &lt;h1&gt;Speed&lt;/h1&gt;
+                            &lt;p class="light-p"&gt;Faster pre-authorization, instant payment to the provider, and timely treatment of the patient&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"&gt;
+                            &lt;span class="glyphicon glyphicon-chevron-left"&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;a class="right carousel-control" href="#carousel-example-generic" data-slide="next"&gt;
+                            &lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+            </pre>
+            <h3>CSS</h3>
+            <pre>
+    @font-face {
+        font-family: 'HelveticaThin';
+        src: url(../fonts/HelveticaNeueCyr-Thin.otf);
+    }
+    
+    body {
+        font-family: 'GothamRoundedLight', Helvetica, sans-serif;
+    }
+    
+    video {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        opacity: 0.7;
+    }
+    
+    .nav>li>a {
+        padding: 10px 5px;
+        text-transform: uppercase;
+        font-family: 'LatoReg', Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 2.8px;
+        text-align: left;
+        color: #fff;
+    }
+            </pre>
+            <h3>VueJS</h3>
+            <pre>
+    &lt;md-field
+    v-if="tab === 'registration'"
+    class="material-input-auth-wrapper validate-block"
+    &gt;
+        &lt;label&gt;Имя&lt;/label&gt;
+        &lt;md-input
+            v-validate="'required|alpha_dash|min:3|max:20'"
+            v-model="firstName"
+            name="name"
+        /&gt;
+        &lt;p
+            v-show="errors.has('name')"
+            class="is-danger"&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/md-field&gt;
+            </pre>
+        </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            <ol>
+                <li>
+                    <h3>Eccentex Simferopol</h3>
+                    <p>August 2018 - Present</p>
+                    <p><strong>Developer full stack</strong></p>
+                    <p>Responsibilities: Development of enterpise software for foreign companies.</p>
+                    <p>Tools and technologies: ExtJS (js) and work with databases (MS SQL and Oracle). From time to time I had to work with C # code.</p>
+                </li>
+                <li>
+                    <h3>Babyshop (Chicco children’s clothes) Kiev</h3> 
+                    <p>September 2018 - December 2018</p>
+                    <p><strong>Frontend Developer</strong></p>
+                    <p>Responsibilities: developing an online store of children’s things</p>
+                    <p>Tools and technologies: VueJS, NuxtJS</p>
+                </li>
+                <li>
+                    <h3>Qvolta qvolta.com/</h3>
+                    <p>February 2018 - September 2018</p>
+                    <p><strong>Frontend Developer</strong></p>
+                    <p>Responsibilities: adaptive layout of pages on templates and from layouts, optimization of someone else’s code, text collection for multilingual implementation, transfer of HTML version of landing pages to symfony, adding behavior scripts, layout of letters on MJML</p>
+                    <p>Tools and technologies: HTML5, Twig, CSS3, Symfony, jQuery, MJML, Git</p>
+                </li>
+                <li>
+                    <h3>3web1: CELL PHONE WEBSITES & TOOLS 3w1.io/</h3>
+                    <p>June 2017 - July 2018</p>
+                    <p><strong>Frontend Developer</strong></p>
+                    <p>Responsibilities: adaptive layout of pages for templates and from layouts, optimization of someone else’s code, work with micro services on symfony, writing simple e2e tests</p>
+                    <p>Tools and technologies: HTML5, Twig, CSS3, Bootstrap, jQuery, SCSS, Symfony, Git, NightmareJS, PHPUnit</p>
+                </li>
+                <li>
+                    <h3>Solid</h3>
+                    <p>May 2016 - October 2017</p>
+                    <p><strong>Frontend Developer</strong></p>
+                    <p>Projects: https://arthmer.net, https://shop.arthammer.net, https://indiecup.gtpmedia.net, https://incisive.com, https://fin-finance.com , https://www.joinwell.io, http://coverme.global</p>
+                    <p>Responsibilities: adaptive layout of pages, optimization of someone else’s code, creating templates on WordPress, layout of letters using MJML, creating advertising banners </p>
+                    <p>Tools and technologies: HTML5, CSS3, Bootstrap, Semantic Ui, jQuery, WordPress, MJML</p>
+                </li>
+                <li>
+                    <h3>Origami</h3> 
+                    <p>August 2016 - April 2017</p>
+                    <p><strong>Frontend Developer</strong></p>
+                    <p>Projects: http: //anyks-mozaikaika.rf, http://kakbyhotel.ru, http: //avubus-vezet.rf </p>
+                    <p>Responsibilities: adaptive layout of pages, mobile adaptation of ready-made sites. Tools and technologies: HTML5, CSS3, Bootstrap, jQuery</p>
+                </li>
+                <li>
+                    <h3>Ewa shop</h3>
+                    <p>May 2015 - June 2016</p>
+                    <p><strong>Frontend Developer</strong></p>
+                    <p>Projects: http://ulysse.ewa-shop.ru, http://cw.ewashop.ru and other Russian affiliate programs</p>
+                    <p>Responsibilities: changing existing site templates, copying new ones and redesigning them on demand, introducing small order processing forms changing scripts to attract customers (timer, pop-up incoming orders, etc.)</p>
+                    <p>Tools and technologies: HTML, CSS3, jQuery</p>
+                </li>
+                <li>
+                    <h3>Archer Software</h3>
+                    <p>August 2015 - September 2015</p>
+                    <p><strong>Frontend Developer</strong></p>
+                    <p>Project: http://pearl.ymeedev.us</p>
+                    <p>Responsibilities: one-time work on animating SVG graphics</p>
+                    <p>Tools and technologies: HTML, CSS</p>
+                </li>
+            </ol>        
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p>The National Academy of Environmental and Resort Construction, Department of Economy, Degree in Economic Cybernetics (2005-10)</p>
+            <h3>Courses</h3>
+            <ul>
+                <li>Programming courses at the World Ort with the Personal Certificates in Web-design and Web-programming (2015)</li>
+                <li>
+                    Online courses on: codeacademy.com, codeschool.com, geekbrains.ru - with specialization in HTML & CSS, JavaScript, jQuery, 
+                    PHP (https://geekbrains.ru/certificates/26179.en, https://geekbrains.ru/certificates/51602.en, https://www.codecademy.com/venul23, 
+                    https://www.codecademy.com/venul)
+                </li>
+                <li>
+                    Symfony 4 in KNP University (https://symfonycasts.com/u/19068/badges/93)
+                </li>
+            </ul>
+        </section>
+        <section class="language">
+            <h2>Language Skills</h2>
+            <h4>English – Intermediate (B1)</h4>
+            Online courses in https://lingualeo.com and https://www.duolingo.com/Venul 
+        </section>
+    </body>
+</html>
+
+
